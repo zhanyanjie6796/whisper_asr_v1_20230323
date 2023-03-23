@@ -9,7 +9,7 @@
 ![Demo gif](demo.gif)
 <br>
 #### Releases 發佈版，程式使用方法：
-在 [`Releases 發佈版`](https://github.com/zhanyanjie6796/whisper_asr_v1_20230323/releases/tag/v1.0.0)(右邊)，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式。
+在 [`Releases 發佈版`](https://github.com/zhanyanjie6796/whisper_asr_v1_20230323/releases/tag/v1.0.0)(右邊)，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式（[`ffmpeg`](https://ffmpeg.org/)）。
 <br>
 將資料夾解壓縮後，執行如下指令：
 ```
