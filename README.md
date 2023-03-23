@@ -15,9 +15,11 @@ ffmpeg：<https://ffmpeg.org/>
 whisper_asr.exe                （預設模型small）
 whisper_asr.exe --model base   （使用模型base）
 whisper_asr.exe --model medium （使用模型medium）
-```
+
 可以用這些模型["tiny", "base", "small", "medium", "large"]
 第一次執行會自動下載。
+```
+
 <br><br>
 小結：<br>
 >whisper即時中文語音辨識建議用模型small。在當前電腦環境下，CPU執行簡單一句話大概8-10秒鐘，GPU執行大概2-3秒。GPU+模型small速度比較接近語音辨識可以接受的速度，且辨識結果勉强可以接受。
@@ -44,9 +46,11 @@ After decompressing the folder, execute the following command:
 whisper_asr.exe (preset model small)
 whisper_asr.exe --model base (use model base)
 whisper_asr.exe --model medium (use model medium)
-```
+
 You can use these models ["tiny", "base", "small", "medium", "large"]
 The first execution will automatically download.
+```
+
 <br><br>
 summary:<br>
 >The model small is recommended for whisper real-time Chinese speech recognition. In the current computer environment, the CPU executes a simple sentence for about 8-10 seconds, and the GPU executes for about 2-3 seconds. The speed of the GPU+ model small is relatively close to the acceptable speed of speech recognition, and the recognition results are barely acceptable.
