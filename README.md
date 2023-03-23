@@ -2,14 +2,14 @@
 #### Whisper_ASR：彥杰修改的 whisper_real_time 語音輸入法
 >參考網站：<https://github.com/davabase/whisper_real_time>
 
-#### 程式執行需要將 [`ffmpeg`](https://ffmpeg.org/) 加入環境變數 Path 中。 <br>
+#### Python程式碼執行需要將 [`ffmpeg`](https://ffmpeg.org/) 加入環境變數 Path 中。(Releases 不用) <br>
 >ffmpeg: <https://ffmpeg.org/>
 
 #### 游標放的位置，就可以開始語音輸入。下圖左CMD，右記事本。
 ![Demo gif](demo.gif)
 <br>
-#### 程式使用方法：
-在Releases發表那邊，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式。
+#### Releases 程式使用方法：
+在 Releases 發佈那邊，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式。
 <br>
 將資料夾解壓縮後，執行如下指令：
 ```
@@ -35,13 +35,13 @@ whisper_asr.exe --model medium （使用模型medium）
 #### Whisper_ASR: whisper_real_time voice input method modified by Yanjie
 > Reference website: <https://github.com/davabase/whisper_real_time>
 
-#### Program execution needs to add [`ffmpeg`](https://ffmpeg.org/) to the environment variable Path. <br>
+#### Python code execution needs to add [`ffmpeg`](https://ffmpeg.org/) to the environment variable Path. (Releases are not used) <br>
 >ffmpeg: <https://ffmpeg.org/>
 
 #### Where the cursor is placed, voice input can start. The picture below shows CMD on the left and Notepad on the right.
 ![Demo gif](demo.gif)
 <br>
-#### How to use the program:
+#### How to use the Releases program:
 On the Releases side, download the CPU or GPU version. If you use the GPU version, remember to update the driver of your computer graphics card first.
 <br>
 After decompressing the folder, execute the following command:
