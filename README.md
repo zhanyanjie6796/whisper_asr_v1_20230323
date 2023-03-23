@@ -28,7 +28,8 @@ whisper_asr.exe --model medium （使用模型medium）
 
 #### 其他參考網站
 >openai-whisper：<https://pypi.org/project/openai-whisper/>
-
+>whisper：<https://github.com/openai/whisper>
+>torch：<https://download.pytorch.org/whl/torch/>
 
 ----
 
@@ -38,14 +39,14 @@ whisper_asr.exe --model medium （使用模型medium）
 #### Whisper_ASR: whisper_real_time voice input method modified by Yanjie
 > Reference website: <https://github.com/davabase/whisper_real_time>
 
-#### Python code execution needs to add [`ffmpeg`](https://ffmpeg.org/) to the environment variable Path. (Releases are not used) <br>
+#### Python code execution needs to add [`ffmpeg`](https://ffmpeg.org/) to the environment variable Path. (Required for Releases too) <br>
 >ffmpeg: <https://ffmpeg.org/>
 
 #### Where the cursor is placed, voice input can start. The picture below shows CMD on the left and Notepad on the right.
 ![Demo gif](demo.gif)
 <br>
-#### How to use the Releases program:
-On the Releases side, download the CPU or GPU version. If you use the GPU version, remember to update the driver of your computer graphics card first.
+#### Releases release version, how to use the program:
+In [`Releases release version`](https://github.com/zhanyanjie6796/whisper_asr_v1_20230323/releases/tag/v1.0.0) (right), download the CPU or GPU version. If you use the GPU version, remember to update the [`driver`](http://www.nvidia.com/Download/index.aspx) of your computer graphics card first.
 <br>
 After decompressing the folder, execute the following command:
 ```
@@ -61,3 +62,8 @@ During use, you can press F8 to pause or continue.
 
 #### Summary:
 >whisper recommends using the model small for real-time Chinese speech recognition. In the current computer environment, the CPU executes a simple sentence for about 8-10 seconds, and the GPU executes for about 2-3 seconds. The speed of the GPU+ model small is relatively close to the acceptable speed of speech recognition, and the recognition results are barely acceptable.
+
+#### Other reference sites
+> openai-whisper: <https://pypi.org/project/openai-whisper/>
+>whisper: <https://github.com/openai/whisper>
+>torch: <https://download.pytorch.org/whl/torch/>
