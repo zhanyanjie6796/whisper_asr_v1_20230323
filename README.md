@@ -27,9 +27,9 @@ whisper_asr.exe --model medium （使用模型medium）
 >whisper即時中文語音辨識建議用模型small。在當前電腦環境下，CPU執行簡單一句話大概8-10秒鐘，GPU執行大概2-3秒。GPU+模型small速度比較接近語音辨識可以接受的速度，且辨識結果勉强可以接受。
 
 #### 其他參考網站
->openai-whisper：<https://pypi.org/project/openai-whisper/>
->whisper：<https://github.com/openai/whisper>
->torch：<https://download.pytorch.org/whl/torch/>
+>openai-whisper：<https://pypi.org/project/openai-whisper/><br>
+>whisper：<https://github.com/openai/whisper><br>
+>torch：<https://download.pytorch.org/whl/torch/><br>
 
 ----
 
@@ -64,6 +64,6 @@ During use, you can press F8 to pause or continue.
 >whisper recommends using the model small for real-time Chinese speech recognition. In the current computer environment, the CPU executes a simple sentence for about 8-10 seconds, and the GPU executes for about 2-3 seconds. The speed of the GPU+ model small is relatively close to the acceptable speed of speech recognition, and the recognition results are barely acceptable.
 
 #### Other reference sites
-> openai-whisper: <https://pypi.org/project/openai-whisper/>
->whisper: <https://github.com/openai/whisper>
->torch: <https://download.pytorch.org/whl/torch/>
+>openai-whisper: <https://pypi.org/project/openai-whisper/><br>
+>whisper: <https://github.com/openai/whisper><br>
+>torch: <https://download.pytorch.org/whl/torch/><br>
