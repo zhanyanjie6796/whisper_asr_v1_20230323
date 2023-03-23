@@ -31,12 +31,12 @@ whisper_asr.exe --model medium （使用模型medium）
 
 # Whisper_ASR
 #### Whisper_ASR: whisper_real_time voice input method modified by Yanjie
-Reference website: <https://github.com/davabase/whisper_real_time>
-<br><br>
+> Reference website: <https://github.com/davabase/whisper_real_time>
+
 #### Program execution needs to add [`ffmpeg`](https://ffmpeg.org/) to the environment variable Path. <br>
-ffmpeg: <https://ffmpeg.org/>
-<br><br>
-You can start voice input at the position where the cursor is placed. The picture below shows CMD on the left and Notepad on the right.
+>ffmpeg: <https://ffmpeg.org/>
+
+#### Where the cursor is placed, voice input can start. The picture below shows CMD on the left and Notepad on the right.
 ![Demo gif](demo.gif)
 <br>
 #### How to use the program:
