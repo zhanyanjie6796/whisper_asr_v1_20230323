@@ -2,14 +2,14 @@
 #### Whisper_ASR：彥杰修改的 whisper_real_time 語音輸入法
 >參考網站：<https://github.com/davabase/whisper_real_time>
 
-#### Python 程式碼執行需要將 [`ffmpeg`](https://ffmpeg.org/) 加入環境變數 Path 中。(Releases 版也需要) <br>
+#### Python 程式碼執行需要將 [`ffmpeg`](https://ffmpeg.org/) 加入環境變數 Path 中。(Releases 發佈版也需要) <br>
 >ffmpeg: <https://ffmpeg.org/>
 
 #### 游標放的位置，就可以開始語音輸入。下圖左CMD，右記事本。
 ![Demo gif](demo.gif)
 <br>
-#### Releases 程式使用方法：
-在 Releases 發佈那邊，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式。
+#### Releases 發佈版，程式使用方法：
+在 [`Releases 發佈版`](https://github.com/zhanyanjie6796/whisper_asr_v1_20230323/releases/tag/v1.0.0)(右邊)，下載CPU或GPU版本。如果使用GPU版本記得先更新自己電腦顯卡的驅動程式。
 <br>
 將資料夾解壓縮後，執行如下指令：
 ```
