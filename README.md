@@ -19,6 +19,8 @@ whisper_asr.exe --model medium （使用模型medium）
 
 可以用這些模型["tiny", "base", "small", "medium", "large"]
 第一次執行會自動下載。
+
+使用中可以按F8,暫停或繼續。
 ```
 
 #### 小結：
@@ -50,6 +52,8 @@ whisper_asr.exe --model medium (use model medium)
 
 You can use these models ["tiny", "base", "small", "medium", "large"]
 The first execution will automatically download.
+
+During use, you can press F8 to pause or continue.
 ```
 
 #### Summary:
