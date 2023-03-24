@@ -29,7 +29,8 @@ whisper_asr.exe --model medium （使用模型medium）
 #### 其他參考網站
 >openai-whisper：<https://pypi.org/project/openai-whisper/><br>
 >whisper：<https://github.com/openai/whisper><br>
->torch：<https://download.pytorch.org/whl/torch/><br>
+>pytorch(官網含指令)：<https://pytorch.org/><br>
+>torch(whl下載)：<https://download.pytorch.org/whl/torch/><br>
 
 ----
 
@@ -66,4 +67,5 @@ During use, you can press F8 to pause or continue.
 #### Other reference sites
 >openai-whisper: <https://pypi.org/project/openai-whisper/><br>
 >whisper: <https://github.com/openai/whisper><br>
->torch: <https://download.pytorch.org/whl/torch/><br>
+>pytorch (official website with instructions): <https://pytorch.org/><br>
+>torch (whl download): <https://download.pytorch.org/whl/torch/><br>
