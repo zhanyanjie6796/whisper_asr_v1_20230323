@@ -61,10 +61,12 @@ def main():
         else:
             for index, name in enumerate(sr.Microphone.list_microphone_names()):
                 if mic_name in name:
-                    source = sr.Microphone(sample_rate=16000, device_index=index)
+                    # 原始 sample_rate=16000 ，測試 8000，11025，32000
+                    # 測試結果原預設最好。速度前面幾個沒有明顯區別32k會慢一點有雜訊，11k有雜訊。8k辨識度較差。
+                    source = sr.Microphone(sample_rate=16000, device_index=index) 
                     break
     else:
-        source = sr.Microphone(sample_rate=16000)
+        source = sr.Microphone(sample_rate=16000) # 原始 sample_rate=16000
         
     # Load / Download model
     model = args.model
@@ -145,9 +147,11 @@ def main():
                     f.write(wav_data.read())
 
                 # Read the transcription.
-                result = audio_model.transcribe(temp_file, fp16=torch.cuda.is_available(),initial_prompt='GPU 程式 FFmpeg')
+                # result = audio_model.transcribe(temp_file, fp16=torch.cuda.is_available(),initial_prompt='GPU 程式 FFmpeg', language='Chinese')
+                # print(torch.cuda.is_available(), end='', flush=True) #torch.cuda.is_available() 常常是True。# fp16=False會快一點。
+                result = audio_model.transcribe(temp_file, fp16=False,initial_prompt='GPU 程式 .', language='Chinese')
                 text = result['text'].strip()
- 
+
                 # 判斷按下暫停的情況。不留暫停時的語音資料。
                 # 彥杰新增之程式  Start =================================
                 if stop_text == True:
