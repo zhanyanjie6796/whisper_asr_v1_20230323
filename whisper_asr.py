@@ -1,7 +1,7 @@
 #! python3.7
 # 【彥杰修改的 whisper_real_time 語音輸入法】
 # 檔案:transcribe_demo_2_cn_KeyWrite.py
-
+# 最後修改時間：20230411,april eleventh,Tuesday
 
 import argparse
 import io
@@ -19,7 +19,7 @@ from sys import platform
 
 def main():
     parser = argparse.ArgumentParser()
-    # 原始 default="medium" ， 改 small，彥杰20230320。
+    # 原始 default="medium" ， 改 small，彥杰20230320。GPU+模型small速度比較接近語音辨識可以接受的速度，且辨識結果勉强可以接受。
     parser.add_argument("--model", default="small", help="Model to use",
                         choices=["tiny", "base", "small", "medium", "large"])
     parser.add_argument("--non_english", action='store_true',
@@ -105,7 +105,6 @@ def main():
     print('開始語音辨識，可按 F8 暫停 。。。。。\n')
     import keyboard   
     stop_text = False # 判斷按下暫停的情況。   
-        
     # 彥杰新增之程式  End   =================================
                     
     while True:   
@@ -148,8 +147,11 @@ def main():
 
                 # Read the transcription.
                 # result = audio_model.transcribe(temp_file, fp16=torch.cuda.is_available(),initial_prompt='GPU 程式 FFmpeg', language='Chinese')
-                # print(torch.cuda.is_available(), end='', flush=True) #torch.cuda.is_available() 常常是True。# fp16=False會快一點。
-                result = audio_model.transcribe(temp_file, fp16=False,initial_prompt='GPU 程式 .', language='Chinese')
+                # print(torch.cuda.is_available(), end='', flush=True) # GPU 能否被 PyTorch 調用。# fp16=False會快一點。
+                # 中等模型采样率 16000，指定中文語言模型大概1-2秒左右。不指定語言,中型模型大概3秒鐘，有時候莫名lag更多。                
+                # G7環境不管是使用 CPU 還是 GPU 的 Python，FP16=False還是會比較快。
+# transcribe ===============》
+                result = audio_model.transcribe(temp_file , fp16=False , initial_prompt='GPU 程式 .' , language='Chinese')
                 text = result['text'].strip()
 
                 # 判斷按下暫停的情況。不留暫停時的語音資料。
@@ -193,7 +195,9 @@ def main():
                 # 彥杰新增之程式  End   =================================
 
                 # Infinite loops are bad for processors, must sleep.
-                sleep(0.25) # 原始 sleep(0.25) 彥杰
+                # 小，中模型,採樣率16000，說三個字的情況設定sleep 0.2-1.0 秒都是2秒鐘更新。
+                # sleep越大CPU消耗越少，但容易有雜訊或長篇文章漏字，我取中間設定 0.5。
+                sleep(0.25) # 原始 sleep(0.25) 彥杰多方測試也是0.25結果好。
         except KeyboardInterrupt:
             break
         
